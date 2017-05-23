@@ -1,15 +1,18 @@
-talla = prompt("Insert votre pointure: ")
+function forma(){
 
-anne = prompt("Insert votre annee de naissance: ")
+var a = document.getElementById("pointure").value;
 
-mult = parseInt(talla) * 2;
+var b = document.getElementById("annee").value;
+
+mult = parseInt(a) * 2;
 
 aju = parseInt(mult) + 5;
 
 mult2 = parseInt(aju) * 50;
 
-rest = parseInt(mult2) - parseInt(anne);
+rest = parseInt(mult2) - parseInt(b);
 
 total = parseInt(rest) + 1766;
 
 alert("tout c\'est: "+total);
+}

@@ -4,13 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Exc04 JS</title>
 	<script type="text/javascript">
-		nom = prompt("Quel est votre Nom: ");
-		prenom = prompt("Quel es votre Prenom: ");
-		ville = prompt("Ou habites Vous: ");
-		alert("Nom: "+nom +"\nPrenom: "+prenom +"\nVille: "+ville);
+
+	function forma(){
+		var a = document.getElementById("nom").value;
+		var b = document.getElementById("prenom").value;
+		var c = document.getElementById("ville").value;
+		document.write("Nom: "+a +"\nPremon: "+b +"\nVille: "+c);
+		}
 	</script>
 </head>
 <body>
-	
+	<form>
+            <label for="nom">Nom : </label>
+            	<input type="text" name="nom" id="nom"/>
+            <label for="prenom">Prénom : </label>
+            	<input type="text" name="prenom" id="prenom"/>
+            <label for="ville">Ville : </label>
+            	<input type="text" name="ville" id="ville"/>
+            <button  name="valider" onclick="forma();">Valider</button>
+        </form>
 </body>
 </html>

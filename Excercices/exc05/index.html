@@ -4,13 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Exc05 JS</title>
 	<script type="text/javascript">
-		a = prompt("ingrese le premier nombre pour faire le multiplier: ");
-		b = prompt("Le deuxieme: ");
+	
+	function forma(){ 
+
+		var a = document.getElementById("premier_nombre").value;
+		var b = document.getElementById("deuxieme_nombre").value;
 		res = parseInt(a) * parseInt(b);
 		alert("Le resulta c\'est: "+res);
+	}
 	</script>
 </head>
 <body>
-	
+	<form>
+            <label for="premier_nombre">Premier nombre : </label>
+            	<input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label>
+            	<input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  onclick="forma();" name ="valider">Valider</button>
+        </form>
 </body>
 </html>
