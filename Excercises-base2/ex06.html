@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Excercice 6</title>
+	<script type="text/javascript">
+		
+		var tab = new Array(-2, 1, 4);
+
+		function soustrait (x) {
+
+				return x - 2;
+
+		}
+
+		function affiche () {
+			
+			var reslt1 = soustrait (tab [0]);
+			var reslt2 = soustrait (tab [tab.length-1]);
+
+			if (reslt1 >= 0) {
+
+				alert("Premier resulta de le tableau "+reslt1);
+
+			}else {
+				alert("Nombre négatif!");
+			}
+
+			if (reslt2 >= 0) {
+
+			alert("Dernier resulta de le tableau "+reslt2);
+
+			}else {
+				alert("Nombre négatif!");
+			}
+			
+
+		}
+
+	</script>
+</head>
+<body>
+	<button onclick="affiche();" name="operation">enter</button>
+</body>
+</html>

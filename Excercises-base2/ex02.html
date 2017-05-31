@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercice 2</title>
+		<script type="text/javascript">
+			function surfaceCercle(){
+				
+				var a = document.getElementById("rayon").value;
+
+				surF = 3.14 * (2 * parseInt(a));
+
+				alert("le surface de le cercle ce: "+surF);
+
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="circle">Cercle :</label><br/>
+			<input type="text" id="rayon" name="rayon" placeholder="rayon">
+			<button onclick="surfaceCercle();" name="surface">Enter</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Excercice 9</title>
+	<script type="text/javascript">
+
+	function testWhile () {
+
+		var condition = true;
+
+		while (condition) {
+		
+			var text = prompt("Ingrese en chaine: ");
+
+			var res = text.indexOf("p");
+
+			if (res > -1) {
+
+				alert("la lettre p est \""+res+"\"");
+				condition = false;
+			}else {
+			
+				alert("Il n\'y a pas lettre \"p\"");
+			
+			}
+		}
+
+	}
+
+	</script>
+</head>
+<body>
+	<button onclick="testWhile();" name="testWhile">enter</button>
+</body>
+</html>
