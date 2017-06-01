@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercice 1</title>
+		<script type="text/javascript">
+			function surfaceRectangle(){
+
+				var a = document.getElementById("alto").value;
+				var b = document.getElementById("largo").value;
+
+				surF = parseInt(a) * parseInt(b);
+				alert("Le surface ce: " +surF);
+
+			}
+
+			function periRectangle(){
+
+				var c = document.getElementById("altoP").value;
+				var d = document.getElementById("largoP").value;
+
+				Peri = (2 * parseInt(c)) + (2 * parseInt(d));
+				alert("Le perimetre ce: " +Peri);
+
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="surface">Surface :</label><br/>
+			<input type="text" id="largo" name="surface" placeholder="largo">
+			<input type="text" id="alto" name="SurFace" placeholder="alto">			
+			<button onclick="surfaceRectangle();" name="surface">Enter</button>
+		</form>
+		
+
+		<form>
+			<label for="perimetre">perimetre :</label><br/>
+			<input type="text" id="largoP" name="surface" placeholder="largo">
+			<input type="text" id="altoP" name="SurFace" placeholder="alto">	
+			<button onclick="periRectangle();" name="perimetre">Enter</button>
+		</form>
+	</body>
+</html>

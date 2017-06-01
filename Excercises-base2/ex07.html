@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Excercice 7</title>
+	<script type="text/javascript">
+
+	function faireChoix () {
+
+		var cifra;
+
+		cifra = prompt("Choisir un chifre entre 1 et 3");
+		
+		switch (cifra) {
+			case "1":
+
+				alert("1. Merci");
+				break;
+
+			case "2":
+
+				alert("2. Bonjour");
+				break;
+
+			case "3":
+
+				alert("3. Au revoir");
+				break;
+
+			default:
+				
+				alert("Pardon, que voulez-vous");
+				break;
+		}
+
+	}
+
+	</script>
+</head>
+<body>
+	<button onclick="faireChoix();" name="faireChoix">Enter</button>
+</body>
+</html>

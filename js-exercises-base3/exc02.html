@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice 2</title>
+		<script type="text/javascript">
+			
+		function valida(e) {
+			tecla = (document.all) ? e.keyCode : e.which;
+				if (tecla==13){
+					alert ('Merci de votre participation');
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="nom">Votre nom  : </label><input  onkeypress="valida(event);" type="text" name="nom" value="" id="nom"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+    <script type="text/javascript">
+
+    var prima = "image1.jpg"
+    var seg = "image1_2.jpg";
+
+    function entra () {
+      
+       document.getElementById("image1").src = seg;
+
+
+    }
+
+    function sale () {
+      
+       document.getElementById("image1").src = prima;
+
+    }
+
+
+    </script>
+  </head>
+  <body>
+
+    <img onmouseover="entra();" onmouseout="sale();" src="image1.jpg" id="image1"/>
+    
+  </body>
+</html>
