@@ -5,12 +5,28 @@
     <title>Exercice 1</title>
     <script type="text/javascript">
 
+    var prima = "image1.jpg"
+    var seg = "image1_2.jpg";
 
-  
+    function entra () {
+      
+       document.getElementById("image1").src = seg;
+
+
+    }
+
+    function sale () {
+      
+       document.getElementById("image1").src = prima;
+
+    }
+
+
     </script>
   </head>
   <body>
-    <img onmouseover="this.src='image1_2.jpg';" onmouseout="this.src='image1.jpg';" src="image1.jpg" id="image1"/>
+
+    <img onmouseover="entra();" onmouseout="sale();" src="image1.jpg" id="image1"/>
     
   </body>
 </html>

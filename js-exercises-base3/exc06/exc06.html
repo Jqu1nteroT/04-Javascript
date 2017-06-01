@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+    <script type="text/javascript">
+
+      var f = document.getElementsByTagName("img");      
+
+    function change (x) {
+      
+        x.src = "images/"+ x.id +"_2.jpg";
+
+        
+    }
+
+    function test (x) {
+      
+        x.src = "images/"+ x.id+".jpg";
+
+    }
+
+    </script>
+  </head>
+  <body>
+    <div  class="conteneur">
+      <img onmouseover="change(this);" onmouseout="test(this);" src="images/image1.jpg" id="image1" />
+      <img onmouseover="change(this);" onmouseout="test(this);" src="images/image2.jpg" id="image2" />
+      <img onmouseover="change(this);" onmouseout="test(this);" src="images/image3.jpg" id="image3" />
+      <img onmouseover="change(this);" onmouseout="test(this);" src="images/image4.jpg" id="image4" />
+      <img onmouseover="change(this);" onmouseout="test(this);" src="images/image5.jpg" id="image5" />
+    </div>
+  </body>
+</html>
