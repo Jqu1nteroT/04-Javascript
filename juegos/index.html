@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aplication JS</title>
+	<script type="text/javascript">
+		
+	function multi (val, multiple) {
+		
+		var res = val % multiple;
+		if (res == 0){
+			return true;
+		}else {
+			return false;
+		}
+
+	}
+
+	for (var i = 1; i <= 199; i++){
+
+		var condition = true;
+
+		while (condition) {
+		 	
+			if (multi (i, 3)){
+				console.log('Bouyaka');
+			}
+
+			if (multi (i, 5)){
+				console.log('Bounganga');
+			}
+			condition = false;
+		}
+
+			console.log('BouyakaBounganga');
+		
+
+
+	}
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
