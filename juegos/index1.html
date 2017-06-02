@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>aplication 2 js</title>
+	<script type="text/javascript">
+		
+		var nombret = 3;
+		var nbredevine = Math.floor(Math.random()*100);
+		console.log(nbredevine);
+
+		for (var i = 0; i < nombret; i++){
+			var saisi = prompt("Entre votr nombre");
+
+			if (saisi < nbredevine){
+				alert("plus grand");
+			}
+			if (saisi > nbredevine){
+				alert("plus petit");
+			}
+			if (saisi == nbredevine){
+				alert("Vous gagne!");
+				break;
+			}
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
