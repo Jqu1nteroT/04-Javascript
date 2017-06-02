@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Jeux Feuille, Pierre et Ciseaux</title>
-	<script type="text/javascript">
-		
-		var oport = 3;
-		var a = Math.floor(Math.random()*3+1);
-		console.log(a);
-		
-		for (var i = 0; i< oport; i++){
+	<head>
+		<meta charset="UTF-8">
+		<title>Jeux Feuille, Pierre et Ciseaux</title>
+		<script type="text/javascript">
+			
+				var oport = 3;
+				var scoreJoueur = 0;
+				var scoreOrdi = 0;
+			
+			function comparar (a , b) {
+				if (a === b){
+					return "empate!";
+				}
+				if (a === "pierre") {
+					if (b === "ciseaux"){
+						scoreJoueur++;
+						return "C1 Pierre: joueur gagne!";
+					}else {
+						scoreOrdi++;
+						return "C1 Feuille ordi gagne!";
+					}
+				}
+				if (a === "feuille") {
+					if (b === "pierre"){
+						scoreJoueur++;
+						return "C2 Feuille joueur gagne!";
+					}else {
+						scoreOrdi++;
+						return "C2 Ciseaux ordi gagne!";
+					}
+				}
+				if (a === "ciseaux") {
+					if (b === "Feuille"){
+						scoreJoueur++;
+						return "C3 Ciseaux joueur gagne!";
+					}else {
+						scoreOrdi++;
+						return "C3 Pierre ordi gagne!";
+					}
+				}
+				}
+			for (var i = 0; i < oport; i++){
 
-			var b = prompt("ingrese tu option: \n1. Feuille \n2. Pierre \n3. Ciseaux");
-		
-			var x = parseInt(a) + parseInt(b);
+			var joueur = prompt("pierre, feuille ou ciseaux?");
+			var numero = Math.floor(Math.random()*3 + 1);
 
-			if (x == 2){
-
-				console.log(x);
-				break;
+		if (numero == 1){
+				respuesta = "pierre";
 			}
+			if (numero == 2) {
+					
+				respuesta = "feuille";
+			}
+			else {
+				
+				respuesta = "ciseaux";
+				
+				}
+			
+			console.log(respuesta);
+			alert(comparar(joueur, respuesta));
+		}
 
+		if (scoreJoueur > scoreOrdi){
+
+			document.write("Joueur Gagne.!"+scoreJoueur);
+
+		} else if (scoreOrdi > scoreJoueur){
+			
+			document.write("Ordenator Gagne.!"+scoreOrdi);
+
+		} else {
+
+			document.write("Emapte.!");
 
 		}
 
-	function comparer (a , b) {		
 
-				
-
-			
-
-	}
-
-
-	</script>
-</head>
-<body>
-	
-</body>
+		</script>
+	</head>
+	<body>
+		
+	</body>
 </html>
