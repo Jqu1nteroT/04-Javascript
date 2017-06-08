@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 01</title>
+</head>
+<body>
+	<canvas id="mon_canvas" width="600" height="700">
+		
+	</canvas>
+	<script type="text/javascript">
+		
+	var c = document.getElementById("mon_canvas");
+
+	var ctx = c.getContext("2d");
+	ctx.strokeStyle = "black";
+
+	//Asta
+	ctx.beginPath();
+	ctx.arc(98, 80, 2, 0, Math.PI *2);
+	ctx.moveTo(98,80);
+	ctx.lineTo(98,500);
+	ctx.lineWidth = 5;
+	ctx.lineCap = "round";
+	ctx.stroke();
+	ctx.closePath();
+
+	//bandera
+
+	//franja amarillo
+	ctx.beginPath();
+	ctx.arc(210,210,155,1.25*Math.PI,1.75*Math.PI);
+	ctx.arc(429,-10,155,0.75*Math.PI,0.25*Math.PI, true);
+	ctx.arc(429,60,155,0.25*Math.PI,0.75*Math.PI);
+	ctx.arc(210,280,155,1.75*Math.PI,1.25*Math.PI, true);	
+	ctx.fillStyle = "yellow";
+	ctx.fill();
+	ctx.closePath();
+
+	//franja azul
+	ctx.beginPath();
+	ctx.arc(429,60,155,0.25*Math.PI,0.75*Math.PI);
+	ctx.arc(210,280,155,1.75*Math.PI,1.25*Math.PI, true);
+	ctx.arc(210,350,155,1.25*Math.PI,1.75*Math.PI);
+	ctx.arc(429,130,155,0.75*Math.PI,0.25*Math.PI, true);
+	ctx.fillStyle = "blue";
+	ctx.fill();
+	ctx.closePath();
+
+	//estrellas
+
+	ctx.beginPath();
+	ctx.arc(250, 190, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(280, 185, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(310, 190, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(335, 205, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(355, 220, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(370, 235, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(390, 250, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(405, 270, 2, 0, Math.PI *2);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+	ctx.closePath();
+
+
+	//franja roja
+	ctx.beginPath();
+	ctx.arc(429,130,155,0.25*Math.PI,0.75*Math.PI);
+	ctx.arc(210,350,155,1.75*Math.PI,1.25*Math.PI, true);
+	ctx.arc(210,420,155,1.25*Math.PI,1.75*Math.PI);
+	ctx.arc(429,200,155,0.75*Math.PI,0.25*Math.PI, true);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+
+	</script>
+</body>
+</html>
